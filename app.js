@@ -16,7 +16,7 @@ app.get("/results", function(req, res){
     var searchedMovie = req.query.searchValue;
     
     //create a variable for the query string
-    var queryString = "http://omdbapi.com/?s=" + searchedMovie + "&apikey=thewdb";
+    var queryString = "http://omdbapi.com/?s=" + searchedMovie + "&apikey=INSERT_YOUR_API_KEY_HERE";
     
     
     request(queryString, function(error, response, body){
