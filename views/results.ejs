@@ -1,0 +1,40 @@
+<h1>THIS IS THE RESULTS PAGE</h1>
+
+<ul>
+    
+    <% for(var i = 0; i < data.Search.length; i++){ %>
+        <li>
+            <strong>
+                <%= data.Search[i].Title %>
+            </strong> 
+            - 
+            <em>
+                <%= data.Search[i].Year %>
+            </em>
+        </li>
+    <% } %>
+
+</ul>
+
+<!--
+data["Search"].forEach(function(movie) {
+    <li>
+         movie["Title"]
+    </li>
+    });
+-->
+
+<!-- Adding search again button without bootstrap -->
+<form>
+  <button formaction="/">!!!Search Againnn!!!</button>
+</form>
+
+
+
+<!--The below would also work-->
+
+<!--<form method="get" action="/">-->
+<!--    <button type="submit">Search Again!</button>-->
+<!--</form>-->
+
+
